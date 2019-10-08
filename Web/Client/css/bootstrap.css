@@ -6099,9 +6099,9 @@ button.close {
 .carousel-item-prev,
 .carousel-item.active {
     display: block;
-    transition: -webkit-transform .6s ease;
-    transition: transform .6s ease;
-    transition: transform .6s ease, -webkit-transform .6s ease
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease
 }
 
 @media screen and (prefers-reduced-motion:reduce) {
