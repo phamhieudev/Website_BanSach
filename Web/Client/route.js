@@ -5,9 +5,26 @@ myApp.config(["$routeProvider", function ($routeProvider) {
     .when("/home", {
       templateUrl: "views/home.html"
     })
-    .when("/clicksearch/:name", {
-      templateUrl: "views/search-result.html",
-      controller: "SearchCtrl"
+    .when("/shop", {
+      templateUrl: "views/shop.html"
+    })
+    .when("/checkout", {
+      templateUrl: "views/checkout.html"
+    })
+    .when("/myaccount", {
+      templateUrl: "views/myaccount.html"
+    })
+    .when("/blog", {
+      templateUrl: "views/blog.html"
+    })
+    .when("/cart", {
+      templateUrl: "views/cart.html"
+    })
+    .when("/login", {
+      templateUrl: "views/login.html"
+    })
+    .when("/register", {
+      templateUrl: "views/register.html"
     })
     .when("/clickdetail/:id", {
       templateUrl: "views/book-detail.html",

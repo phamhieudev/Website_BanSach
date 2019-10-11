@@ -1,0 +1,41 @@
+<div class="page-wrapper">
+    <div class="page-content-bge5">
+        <div class="container">
+            <div class="login-wrap" style="border: 1px solid black;  border-radius: 3px">
+                <div class="login-content">
+                    <div class="login-logo">
+                        <a href="#">
+                            <img src="../Admin/images/Logo/6.png" alt="Future | Admin">
+                        </a>
+                    </div>
+                    <div class="login-form">
+                        <form name="form">
+                            <div class="form-group">
+                                <label>Tài khoản</label>
+                                <input class="au-input au-input--full" id="user" name="user" placeholder="Nhập tài khoản" ng-model="username" required autofocus>
+                                <label for="user"></label>
+                                <!-- <span class="error" ng-show="form.user.$error.required" style="font-size:15px; color: red">*Vui lòng nhập tên đăng nhập!</span>
+                                <span class="valid" ng-show="form.user.$valid"></span> -->
+                            </div>
+                            <div class="form-group">
+                                <label>Mật khẩu</label>
+                                <input class="au-input au-input--full" type="password" id="password" name="password" placeholder="Password" ng-model="password" Required>
+                                <label for="password"></label>
+                                <!-- <span class="error" ng-show="form.password.$error.required" style="font-size:15px; color: red">*Vui lòng nhập mật khẩu!</span>
+                                <span class="valid" ng-show="form.password.$valid"></span>  -->
+                            </div>
+                            <div class="login-checkbox">
+                                <label>
+                                    <input type="checkbox" name="remember">Nhớ mật khẩu
+                                </label>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6Ld5Cr0UAAAAAJCGVCDjc0cSYPpZq7jM6IWCoNxq"></div>
+                            <button class="au-btn au-btn--block au-btn--green m-b-20 m-t-20" ng-click="login()">Đăng nhập</button>
+                            <span id="btnInvalid" style="font-size: 20px; color: red"></span>
+                        </form>
+                    </div>
+               </div>
+            </div>
+         </div>
+    </div>
+</div>
