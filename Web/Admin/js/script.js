@@ -2,10 +2,10 @@ var myApp = angular.module("myApp", ["ngRoute", "ngCookies"]);
 
 myApp.config(["$routeProvider", function($routeProvider) {
     $routeProvider
-     .when("/home", {
-         templateUrl : "views/login.html",
-        controller: "myCtrlLogin"
-     })
+    //  .when("/home", {
+    //      templateUrl : "views/login.html",
+    //     controller: "myCtrlLogin"
+    //  })
     .when("/bookTitle", {
         templateUrl : "views/bookTitle.html",
         controller: "bookTitleCtrl"
@@ -43,7 +43,7 @@ myApp.config(["$routeProvider", function($routeProvider) {
         controller: "ThongKeCtrl"
     })
     .otherwise({
-        redirectTo: "/home"
+        redirectTo: "/bookTitle"
     });
 
 }]);

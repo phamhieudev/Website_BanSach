@@ -17,7 +17,7 @@
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-
+    <link href="vki/keyboard.css" rel="stylesheet" >
     <!-- Bootstrap CSS-->
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
@@ -35,7 +35,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-   
+   <script src="../Admin/vki/keyboard.js"></script>
+   <!-- <script>
+    function addVKI() {
+        var myInput = document.getElementById('myInput');
+        if (!myInput.VKI_attached) VKI_attach(myInput);
+    }
+    </script> -->
 </head>
 
 <body class="animsition" ng-app="myApp">
@@ -94,7 +100,6 @@
                 </div>
             </header>
             <!-- HEADER DESKTOP-->
-
             <!-- MAIN CONTENT-->
             <div class="main-content bg-white">
               <ng-view></ng-view>

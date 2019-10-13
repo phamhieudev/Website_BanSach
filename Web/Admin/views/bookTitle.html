@@ -11,7 +11,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <label for="id_ISBN" class="col-form-label">ISBN:</label>
+            <label for="id_ISBN" class="col-form-label">ID_SACH:</label>
             <input type="text" class="form-control" name="id_ISBN" id="id_ISBN" ng-model="id_ISBN" ng-disabled=disabled required><br>
 
             <label for="id_LoaiSach" class="col-form-label">Loại sách:</label>
@@ -24,7 +24,7 @@
               <option ng-repeat="publisher in publishers | orderBy: 'tenNXB'" value="{{publisher.id_NXB}}">{{publisher.tenNXB}}</option>
             </select><br>
 
-            <label for="tenDS" class="col-form-label">Tên đầu sách:</label>
+            <label for="tenDS" class="col-form-label">Tên sách:</label>
             <input type="text" class="form-control" name="tenDS" id="tenDS" ng-model="tenDS"><br>
 
             <label for="tacGia" class="col-form-label">Tác giả</label>
@@ -36,17 +36,12 @@
             <label for="tomLuocNoiDung" class="col-form-label">Nội dung:</label>
             <textarea name="name" rows="5" cols="80" class="form-control" name="tomLuocNoiDung" id="tomLuocNoiDung" ng-model="tomLuocNoiDung"></textarea><br>
 
-            <label for="khoSach" class="col-form-label">Khổ sách:</label>
-            <input type="text" class="form-control" name="khoSach" id="khoSach" ng-model="khoSach"><br>
 
             <label for="soTrang" class="col-form-label">Số trang:</label>
             <input type="number" class="form-control" name="soTrang" id="soTrang" ng-model="soTrang"><br>
 
             <label for="dinhKem" class="col-form-label">Đính kèm:</label>
             <input type="text" class="form-control" name="dinhKem" id="dinhKem" ng-model="dinhKem"><br>
-
-            <label for="viTri" class="col-form-label">Vị trí:</label>
-            <input type="text" class="form-control" name="viTri" id="viTri" ng-model="viTri"><br>
 
             <label for="ngonNgu" class="col-form-label">Ngôn ngữ:</label>
             <input type="text" class="form-control" name="ngonNgu" id="ngonNgu" ng-model="ngonNgu"><br>
@@ -55,6 +50,12 @@
             <input type="text" class="form-control" name="phienBan" id="phienBan" ng-model="phienBan"><br>
 
             <label for="namXuatBan" class="col-form-label">Năm xuất bản:</label>
+            <input type="date" class="form-control" name="namXuatBan" id="namXuatBan" ng-model="namXuatBan"/><br>
+
+            <label for="namXuatBan" class="col-form-label">Đơn Giá:</label>
+            <input type="date" class="form-control" name="namXuatBan" id="namXuatBan" ng-model="namXuatBan"/><br>
+
+            <label for="namXuatBan" class="col-form-label">Trạng Thái:</label>
             <input type="date" class="form-control" name="namXuatBan" id="namXuatBan" ng-model="namXuatBan"/><br>
 
             <img ng-src="../images/books/{{hinhAnh}}" style="width:100px;height:108px;" ng-model="hinhAnh"><br><br>
@@ -74,8 +75,8 @@
   <thead>
     <tr class="table-info">
       <th>Hình ảnh</th>
-      <th scope="col">ISBN</th>
-      <th scope="col">Tên đầu sách</th>
+      <th scope="col">ID_SACH</th>
+      <th scope="col">Tên sách</th>
       <th scope="col">Ngôn ngữ</th>
       <th scope="col">Phiên bản</th>
       <th scope="col">Năm xuất bản</th>
@@ -98,7 +99,7 @@
     <td colspan="9">
       <table width="100%">
           <tr>
-            <th scope="col" style="width: 50%">ISBN</th>
+            <th scope="col" style="width: 50%">ID_SACH</th>
             <td>{{x.id_ISBN}}</td>
           </tr>
           <tr>
@@ -110,7 +111,7 @@
             <td>{{x.publisher.tenNXB}}</td>
           </tr>
           <tr>
-            <th scope="col">Tên đầu sách</th>
+            <th scope="col">Tên sách</th>
             <td>{{x.tenDS}}</td>
           </tr>
           <tr>
@@ -118,20 +119,8 @@
             <td>{{x.tomLuocNoiDung}}</td>
           </tr>
           <tr>
-            <th scope="col">Khổ sách</th>
-            <td>{{x.khoSach}}</td>
-          </tr>
-          <tr>
             <th scope="col">Số trang</th>
             <td>{{x.soTrang}}</td>
-          </tr>
-          <tr>
-            <th scope="col">Đính kèm</th>
-            <td>{{x.dinhKem}}</td>
-          </tr>
-          <tr>
-            <th scope="col">Vị trí</th>
-            <td>{{x.viTri}}</td>
           </tr>
           <tr>
             <th scope="col">Ngôn ngữ</th>
@@ -144,6 +133,18 @@
           <tr>
             <th scope="col">Năm xuất bản</th>
             <td>{{x.namXuatBan | date:'dd-MM-yyyy'}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Đơn Giá</th>
+            <td>{{x.namXuatBan}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Trạng Thái</th>
+            <td>{{x.namXuatBan}}</td>
+          </tr>
+          <tr>
+            <th scope="col">Tác Giả</th>
+            <td>{{x.namXuatBan}}</td>
           </tr>
       </table>
     </td>
